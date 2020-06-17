@@ -11,6 +11,33 @@
         android:layout_height="wrap_content"
         android:id="@+id/logout"
         android:text="Log OUT"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/logout"
+        android:layout_below="@+id/add"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/listView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter Your Name"
+        android:id="@+id/edit"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_below="@id/edit"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/add"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
 
 </RelativeLayout>
